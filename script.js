@@ -16,7 +16,7 @@ async function weather_report() {
     console.log(data.humidity.data[0].value)
     document.querySelector(".weather_report").innerHTML = 
     `<div class=""><b>更新時間 : </b>${data.updateTime}</div><br>` + 
-    `<div class=""><h3>濕度 :${data.humidity.data[0].value} %  </h3></div>` 
+    `<div class=""><h3>濕度 : ${data.humidity.data[0].value} %  </h3></div>` 
     //`<div class=""><b>過去一小時平均紫外線指數 : </b>${data.uvindex.data[0].value}，強度屬於${data.uvindex.data[0].desc}。</div>`
 
     let temperature_content = ''
