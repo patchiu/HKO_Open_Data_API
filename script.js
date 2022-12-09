@@ -52,10 +52,14 @@ async function weather_forecast() {
     //console.log(data)
     document.querySelector(".weather_forecast").innerHTML = 
     `   
-        <div class=""><b>更新時間 : </b>${data.updateTime}</div><br>
+        <div class=""><b>更新時間 : </b>${data.updateTime}</div>
+        <br>
         <div class=""><b>概況 : </b>${data.generalSituation}</div>
+        <br>
         <div class=""><b>熱帶氣旋資訊 : </b>${data.tcInfo}</div>
+        <br>
         <div class=""><b>火災危險警告信息 : </b>${data.fireDangerWarning}</div>
+        <br>
         <div class=""><b>預測/展望 : </b>${data.forecastPeriod}，${data.forecastDesc}展望${data.outlook} </div>
         <br>
         
